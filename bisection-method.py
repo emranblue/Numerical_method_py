@@ -1,3 +1,4 @@
+#bisection method
 from numpy import *
 def f(x):#defining function and return only
     return (1/16)*x**3-sin(x)

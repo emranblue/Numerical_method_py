@@ -1,3 +1,4 @@
+#fixed point iteration method
 from numpy import *
 def f(x):#defining a function
     return -2**-x+x**3-0.5*x**2+x
