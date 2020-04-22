@@ -2,7 +2,7 @@
 from numpy import *
 import math as mt
 ##six row of data given as i know it so i use static data type...dynamic can be used
-x=ndarray((6,7),dtype='float')
+x=ndarray((6,7),dtype='float')#as question given ,so i pick static data type,dynamic ca be used
 i=0
 for line in loadtxt('ndf_input.txt',skiprows=1)[:,0:2]:
     x[i,0],x[i,1]=line
