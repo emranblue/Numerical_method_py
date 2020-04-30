@@ -1,7 +1,7 @@
 # NUMERCIAL_METHOD
 This repositories is all about my university math assignment,
 perticularly on numerical method,discrete math,Linear algebra..
-question is provided in pdf file,
+here i solve those problem graphically,
 this is also a silly practicing folder
 
 
