@@ -1,5 +1,5 @@
 # NUMERCIAL_METHOD
-This repositories is all about my university math assignment,
+This repository is all about my university math assignment,
 perticularly on numerical method,discrete math,Linear algebra..
 here i solve those problem graphically,
 code is in .py extension file,
