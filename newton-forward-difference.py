@@ -30,12 +30,14 @@ def f(x1):
         fl.write('\n')
         result=result+coff(i,x1)*x[0,i+1]
     return result    
-plt.plot(x[:,0],x[:,1])
+plt.plot(x[:,0],x[:,1],label='raw-data',linewidth=2,marker='o')
 q=linspace(10,20,1000)
 w=array(f(q))
 plt.xlim(9,20)
 plt.ylim(0,800)
-plt.plot(q,w)
+plt.plot(q,w,label='interpolated',linewidth=2)
+plt.title('Newton-divided_formula')
+plt.legend()
 plt.savefig('newton-forward.png')
 plt.show()
 fl.write('result is %5.2f'%(w[-1]))
