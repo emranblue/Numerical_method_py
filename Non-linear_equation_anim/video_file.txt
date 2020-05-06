@@ -1,0 +1,4 @@
+Animation-bisection_method.mp4
+Animation-fixed_point-method.mp4
+Animation-newton_rapson-method.mp4
+Animation-regula_falsi-method.mp4

@@ -1,0 +1,24 @@
+from numpy import *
+from matplotlib.animation import FuncAnimation as fn
+import matplotlib.pyplot as plt
+#plt.style.use('dark_background')
+def f(x):
+    return 2**x*sin(x)
+def df(x,h):
+    return (f(x+h)-f(x-h))/(2*h)
+def derivat(a,h=0.2,n=4):
+    x=ndarray((n,n))
+    for i in range(n):
+        x[i,0]=df(a,h)
+        h/=2
+    for j in range(1,n):
+        for i in range(j,n):
+            x[i,j]=x[i,j-1]+(x[i,j-1]-x[i-1,j-1])/(4**j-1)
+    return x[n-1,n-1]           
+fig,ax=plt.subplots()
+
+def animate(i):
+    print(i)
+anim=fn(fig,animate,frames=arange(6,10),interval=0,repeat=False)
+#anim.save('approx.mp4',fps=30,writer='ffmpeg')
+plt.show()
