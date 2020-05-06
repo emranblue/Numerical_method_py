@@ -17,7 +17,7 @@ def inti():
     ax.set_title('Fixed-point-method')
     ax.plot(a,g(a))
     ax.plot(a,a)
-    ax.scatter(p0,p,color='red',label='Intitial-approximation')
+    ax.scatter(p0,p,color='red',label='Inititial-approximation')
     ax.axvline(color='white',linewidth=3)
     ax.axhline(color='white',linewidth=3)
     
