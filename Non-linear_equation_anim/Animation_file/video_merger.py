@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from moviepy.editor import *
 import os
 import sys
